@@ -1,0 +1,6 @@
+{
+  "name": "frontend-example",
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  }
+}
