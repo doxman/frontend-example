@@ -1,1 +1,28 @@
-{{outlet}}
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Welcome to this silly widget collection site</h1>
+    <h4>Select a photo album from the dropdown and click "Add From Album" to add to your collection</h4>
+    <h4>If you want to reorder or delete photos, click "Edit Collection"</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="small-8 columns">
+    <select onchange={{action (mut selectedAlbum) value="target.value"}}>
+      {{#each albumIds as |albumId|}}
+        <option value={{albumId}} selected={{eq selectedAlbum albumId}}>{{albumId}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <div class="small-4 columns">
+    <div class="row">
+      {{#link-to 'add' selectedAlbum class="button"}}
+        Add From Album
+      {{/link-to}}
+    </div>
+    <div class="row">
+      {{#link-to 'edit' class="button"}}
+        Edit Collection
+      {{/link-to}}
+    </div>
+  </div>
+</div>
