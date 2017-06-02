@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:collection', 'Unit | Service | collection', {
+moduleFor('service:photo-fetch', 'Unit | Service | photo fetch', {
   // Specify the other units that are required for this test.
   // needs: ['service:foo']
 });

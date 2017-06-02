@@ -1,6 +1,7 @@
 @import "settings";
 @import 'foundation-sites/foundation';
 @include foundation-everything;
+@import 'photo';
 
 select {
   background-image: none;
@@ -10,7 +11,7 @@ select {
   margin-right: 20%;
 }
 
-.button.ember-view {
+.button {
   margin-top: rem-calc(20px);
   margin-bottom: rem-calc(20px);
 }

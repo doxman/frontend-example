@@ -1,0 +1,16 @@
+<div class="row">
+  {{#each photos as |photo|}}
+    <div class="small-6 columns photo-container">
+      <img class="photo-thumbnail" src={{photo.thumbnailUrl}}>
+      <div class="photo-title">{{photo.title}}</div>
+      {{#link-to 'detail' (query-params imgUrl=photo.url) class="button photo-button"}}
+        View
+      {{/link-to}}
+      {{#if showAddButton}}
+        <button class="button photo-button" {{action 'add' photo}}>
+          Add
+        </button>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>

@@ -1,0 +1,30 @@
+.photo {
+  &-list {
+    border: solid red rem-calc(5px);
+    margin-top: rem-calc(40px);
+    overflow-y: scroll;
+    max-height: rem-calc(250px);
+  }
+
+  &-container {
+    border: solid blue rem-calc(5px);
+  }
+
+  &-button {
+    margin-left: rem-calc(20px);
+  }
+
+  &-thumbnail {
+    width: rem-calc(100px);
+    height: rem-calc(100px);
+  }
+
+  &-title {
+    margin-left: rem-calc(10px);
+    display: inline-block;
+    width: rem-calc(200px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
