@@ -1,7 +1,6 @@
 # frontend-example
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A small example website built with Ember and Foundation
 
 ## Prerequisites
 
@@ -11,6 +10,7 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [Bower](https://bower.io/)
 
 ## Installation
 
@@ -39,7 +39,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+TODO
 
 ## Further Reading / Useful Links
 
