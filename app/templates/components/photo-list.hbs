@@ -1,6 +1,6 @@
-<div class="row">
+<div class="grid-x">
   {{#each photos as |photo|}}
-    <div class="small-6 columns photo-container">
+    <div class="small-6 cell photo-container">
       <img class="photo-thumbnail" src={{photo.thumbnailUrl}}>
       <div class="photo-title">{{photo.title}}</div>
       {{#link-to 'detail' (query-params imgUrl=photo.url) class="button photo-button"}}

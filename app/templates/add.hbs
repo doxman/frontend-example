@@ -1,18 +1,14 @@
-<div class="row">
-  <div class="small-12 columns">
+<div class="grid-x">
+  <div class="cell">
     <h1>Add widgets to your collection!</h1>
     <h4>Click "View" for any photo to see the full-size image</h4>
     <h4>Click "Add" to add the photo to the collection</h4>
     <h4>You can only have a maximum of 10 photos at one time!</h4>
   </div>
-</div>
-<div class="row">
-  <div class="small-12 columns">
+  <div class="cell">
     {{photo-list photos=model showAddButton=true addPhoto=(action "addPhoto")}}
   </div>
-</div>
-<div class="row">
-  <div class="small-12 columns">
+  <div class="cell">
     {{back-button target="menu"}}
   </div>
 </div>
